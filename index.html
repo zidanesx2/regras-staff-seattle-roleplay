@@ -178,9 +178,28 @@
         }
 
         .rule-content.show {
-            max-height: 3000px;
+            max-height: 5000px;
             padding: 30px;
             margin-top: 20px;
+            overflow-y: auto;
+        }
+
+        .rule-content.show::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .rule-content.show::-webkit-scrollbar-track {
+            background: rgba(138, 43, 226, 0.1);
+            border-radius: 10px;
+        }
+
+        .rule-content.show::-webkit-scrollbar-thumb {
+            background: rgba(138, 43, 226, 0.5);
+            border-radius: 10px;
+        }
+
+        .rule-content.show::-webkit-scrollbar-thumb:hover {
+            background: rgba(138, 43, 226, 0.7);
         }
 
         .rule-item {
