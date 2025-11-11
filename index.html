@@ -64,27 +64,43 @@
         }
 
         h1 {
-            font-size: 3.5em;
+            font-size: 4em;
             margin-bottom: 15px;
-            background: linear-gradient(135deg, #a855f7, #ec4899, #8b5cf6);
+            background: linear-gradient(135deg, #ffffff, #e9d5ff, #a855f7, #ec4899);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            text-shadow: 0 0 30px rgba(168, 85, 247, 0.5);
+            filter: drop-shadow(0 0 20px rgba(168, 85, 247, 0.8)) drop-shadow(0 0 40px rgba(236, 72, 153, 0.5));
             font-weight: 900;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #a855f7, #ec4899, transparent);
+            border-radius: 10px;
         }
 
         .subtitle {
-            font-size: 1.3em;
-            color: #c4b5fd;
-            margin-top: 10px;
-            letter-spacing: 1px;
+            font-size: 1.4em;
+            color: #e9d5ff;
+            margin-top: 25px;
+            letter-spacing: 2px;
+            font-weight: 500;
+            text-shadow: 0 2px 10px rgba(168, 85, 247, 0.5);
         }
 
         .rules-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
             gap: 30px;
             margin-bottom: 50px;
         }
@@ -319,8 +335,8 @@
     
     <div class="container">
         <header>
-            <h1><span class="emoji">📜</span> REGRAS STAFF SEATTLE <span class="emoji">📜</span></h1>
-            <p class="subtitle">Sistema de Regras e Conduta da Equipe Administrativa</p>
+            <h1>STAFF SEATTLE</h1>
+            <p class="subtitle">⚡ Sistema de Regras e Conduta da Equipe Administrativa ⚡</p>
         </header>
 
         <div class="rules-grid">
